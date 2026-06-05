@@ -94,7 +94,7 @@ function runCommand(rawCommand) {
   }
 
   if (normalized === "links") {
-    line(`<span class="prompt">links</span> ${link("https://github.com/PhiBao", "GitHub")} / ${link("https://www.linkedin.com/in/kiter-phi-bao/", "LinkedIn")} / ${link("https://x.com/0xKiter", "X @0xKiter")} / ${link("https://t.me/kiter9", "TG @kiter9")}`);
+    line(`<span class="prompt">links</span> ${link("https://github.com/PhiBao", "GitHub")} / ${link("https://www.linkedin.com/in/kiter-phi-bao/", "LinkedIn")} / ${link("https://x.com/0xKiter", "X @0xKiter")} / ${link("https://t.me/kiter9", "TG @kiter9")} / ${link("https://myanimelist.net/profile/Kiter", "MAL")}`);
     return;
   }
 
