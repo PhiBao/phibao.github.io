@@ -41,11 +41,17 @@ const projects = {
     live: "https://trust-grid-sol.vercel.app",
     detail: "AI agent hiring and trustless payment marketplace on Solana.",
   },
-  cipher: {
-    title: "Cipher",
-    repo: "https://github.com/PhiBao/cipher",
-    live: "https://cipher-fhe.vercel.app",
-    detail: "Privacy-preserving credit scoring and micro-lending protocol built with Zama FHE.",
+  blinddeal: {
+    title: "BlindDeal",
+    repo: "https://github.com/PhiBao/blind-deal",
+    live: "https://blind-deal.vercel.app",
+    detail: "Confidential P2P price negotiation on Fhenix. Achieved Runner-up level and got rewarded on Akindo.",
+  },
+  signalforge: {
+    title: "Signal Forge",
+    repo: "https://github.com/PhiBao/signal-forge",
+    live: "https://signal-forge-pink.vercel.app",
+    detail: "Reasoning as a Service: an autonomous AI agent that sells its thinking.",
   },
 };
 
@@ -57,11 +63,17 @@ const aliases = {
   "open yield-mind": "open yield",
   "open guarded-alpha": "open guarded",
   "open trust-grid-sol": "open trustgrid",
+  "open blind-deal": "open blinddeal",
+  "open blind deal": "open blinddeal",
+  "open signal-forge": "open signalforge",
+  "open signal forge": "open signalforge",
 };
 
 const output = document.querySelector("#terminal-output");
 const form = document.querySelector("#terminal-form");
 const input = document.querySelector("#terminal-input");
+const feedRows = Array.from(document.querySelectorAll(".feed-row"));
+const feedDetail = document.querySelector("[data-feed-detail]");
 
 function line(html) {
   const p = document.createElement("p");
@@ -81,7 +93,7 @@ function runCommand(rawCommand) {
   line(`<span class="prompt">kiter$</span> ${rawCommand || "help"}`);
 
   if (normalized === "help") {
-    line("<span class=\"prompt\">help</span> commands: projects, open gotham, open sovibe, links, clear");
+    line("<span class=\"prompt\">help</span> commands: projects, open gotham, open sovibe, open blinddeal, links, clear");
     return;
   }
 
@@ -136,14 +148,57 @@ output.addEventListener("click", (event) => {
   runCommand(button.dataset.command);
 });
 
-document.querySelectorAll(".dossier").forEach((card) => {
-  card.tabIndex = 0;
-  card.setAttribute("role", "button");
+function renderFeedDetail(projectKey) {
+  const project = projects[projectKey];
+
+  if (!project || !feedDetail) {
+    return;
+  }
+
+  const liveLink = project.live ? `<a href="${project.live}" target="_blank" rel="noreferrer">Live</a>` : "";
+  feedDetail.innerHTML = `
+    <p class="card-kicker">selected build</p>
+    <h3>${project.title}</h3>
+    <p>${project.detail}</p>
+    <div class="card-actions">
+      <a href="${project.repo}" target="_blank" rel="noreferrer">Repo</a>
+      ${liveLink}
+    </div>
+  `;
+}
+
+function activateFeedRow(row) {
+  feedRows.forEach((item) => item.classList.remove("is-active", "is-shifting"));
+  row.classList.add("is-active", "is-shifting");
+  renderFeedDetail(row.dataset.project);
+  window.setTimeout(() => row.classList.remove("is-shifting"), 500);
+}
+
+if (feedRows.length) {
+  let activeIndex = Math.max(0, feedRows.findIndex((row) => row.classList.contains("is-active")));
+  renderFeedDetail(feedRows[activeIndex].dataset.project);
+
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    window.setInterval(() => {
+      const activeElement = document.activeElement;
+      const feedHasFocus = activeElement && activeElement.closest("[data-live-feed]");
+      const feedIsHovered = feedRows.some((row) => row.matches(":hover"));
+
+      if (feedHasFocus || feedIsHovered) {
+        return;
+      }
+
+      activeIndex = (activeIndex + 1) % feedRows.length;
+      activateFeedRow(feedRows[activeIndex]);
+    }, 2400);
+  }
+}
+
+feedRows.forEach((card) => {
   card.setAttribute("aria-label", `Open ${card.querySelector(".repo-name").textContent} dossier in terminal`);
 
   card.addEventListener("click", () => {
-    document.querySelector("#terminal").scrollIntoView({ behavior: "smooth", block: "start" });
-    runCommand(`open ${card.dataset.project}`);
+    activateFeedRow(card);
   });
 
   card.addEventListener("keydown", (event) => {

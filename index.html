@@ -3,103 +3,88 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#05070d">
+    <meta name="theme-color" content="#070910">
     <meta
       name="description"
-      content="Kiter / PhiBao portfolio: AI agents, Web3 systems, DeFi terminals, and hackathon-winning onchain applications."
+      content="Kiter / PhiBao portfolio: DeFi agents, onchain systems, trading terminals, and hackathon-winning projects."
     >
     <meta property="og:title" content="Kiter / PhiBao - Portfolio">
     <meta
       property="og:description"
-      content="AI agents, Web3 systems, DeFi terminals, and hackathon-winning onchain applications."
+      content="DeFi agents, onchain systems, trading terminals, and hackathon-winning projects."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://phibao.github.io/">
     <title>Kiter / PhiBao - Portfolio</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://avatars.githubusercontent.com">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260612-ui2">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="noise" aria-hidden="true"></div>
-    <div class="scanlines" aria-hidden="true"></div>
+    <div class="page-glow" aria-hidden="true"></div>
 
     <header class="topbar">
       <a class="brand" href="#main" aria-label="Kiter portfolio home">
         <span class="brand-mark">K</span>
-        <span>KITER://PORTFOLIO</span>
+        <span>Kiter OS</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#dossiers">Projects</a>
         <a href="#wins">Wins</a>
+        <a href="#builds">Builds</a>
         <a href="#terminal">Terminal</a>
       </nav>
-      <div class="status-pill" aria-label="Current status">
-        <span class="pulse" aria-hidden="true"></span>
-        Online
-      </div>
+      <span class="online"><i aria-hidden="true"></i>online</span>
     </header>
 
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">AI agent operator / Web3 builder / Terminal native</p>
-          <h1 id="hero-title" data-text="Kiter / PhiBao">Kiter / PhiBao</h1>
+        <div class="hero-main">
+          <p class="eyebrow">DeFi agents / onchain apps / shipping mode</p>
+          <h1 id="hero-title">Kiter / PhiBao</h1>
           <p class="slogan">I believe in markdown supremacy</p>
           <p class="hero-lede">
-            I love DeFi/AI/agents stuff.
-            Dreaming is my dope.
+            I love DeFi, AI, and agents. Building for the agent economy feels like the next big thing.
           </p>
           <div class="hero-actions" aria-label="Profile links">
             <a class="button primary" href="https://github.com/PhiBao" target="_blank" rel="noreferrer">GitHub</a>
-            <!-- <a class="button ghost" href="https://www.linkedin.com/in/kiter-phi-bao/" target="_blank" rel="noreferrer">LinkedIn</a> -->
-            <a class="button ghost" href="https://x.com/0xKiter" target="_blank" rel="noreferrer">X</a>
-            <a class="button ghost" href="https://t.me/kiter9" target="_blank" rel="noreferrer">Telegram</a>
-            <a class="button ghost" href="https://myanimelist.net/profile/Kiter" target="_blank" rel="noreferrer">MAL</a>
+            <a class="button" href="https://x.com/0xKiter" target="_blank" rel="noreferrer">X</a>
+            <a class="button" href="https://t.me/kiter9" target="_blank" rel="noreferrer">Telegram</a>
+            <a class="button" href="https://myanimelist.net/profile/Kiter" target="_blank" rel="noreferrer">MAL</a>
           </div>
         </div>
 
-        <aside class="identity-panel" aria-label="Operator profile">
-          <div class="panel-header">
-            <span>operator.identity</span>
-            <span class="window-controls" aria-hidden="true">
-              <i></i><i></i><i></i>
-            </span>
+        <aside class="operator-card" aria-label="Operator profile">
+          <div class="window-bar">
+            <span>operator.profile</span>
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
           </div>
-          <div class="avatar-frame">
+          <div class="operator-body">
             <img src="https://avatars.githubusercontent.com/u/43992076?v=4" alt="PhiBao GitHub avatar">
+            <dl>
+              <div><dt>focus</dt><dd>DeFi agents</dd></div>
+              <div><dt>stack</dt><dd>TS / Python / Solidity</dd></div>
+              <div><dt>style</dt><dd>terminal-first</dd></div>
+              <div><dt>signal</dt><dd>hackathon proven</dd></div>
+            </dl>
           </div>
-          <dl class="stats-grid">
-            <div>
-              <dt>Mode</dt>
-              <dd>Ship fast</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>AI x Web3</dd>
-            </div>
-            <div>
-              <dt>Stack</dt>
-              <dd>TS / Python / Solidity</dd>
-            </div>
-            <div>
-              <dt>Signal</dt>
-              <dd>Hackathon proven</dd>
-            </div>
-          </dl>
         </aside>
       </section>
 
-      <section class="feature-grid" id="wins" aria-label="Featured wins">
-        <article class="feature-card feature-card-primary">
-          <div class="card-kicker">Featured case file</div>
-          <h2>Gotham Court</h2>
+      <section class="section-head" id="wins" aria-labelledby="wins-title">
+        <p class="eyebrow">Proof of work</p>
+        <h2 id="wins-title">Highlighted Wins</h2>
+      </section>
+
+      <section class="win-grid" aria-label="Highlighted wins">
+        <article class="win-card main-win">
+          <p class="card-kicker">Featured case file</p>
+          <h3>Gotham Court</h3>
           <p>
             Decentralized dispute resolution on GenLayer's AI-native blockchain,
-            built around explainable adjudication flows and onchain execution.
+            built around explainable adjudication and onchain execution.
           </p>
-          <div class="badges" aria-label="Gotham Court badges">
+          <div class="badges">
             <span>GenLayer Bradbury</span>
             <span>Onchain Justice Winner</span>
             <span>AI Governance</span>
@@ -110,93 +95,107 @@
           </div>
         </article>
 
-        <article class="feature-card">
-          <div class="card-kicker">Rewarded build</div>
-          <h2>SoVibe</h2>
+        <article class="win-card">
+          <p class="card-kicker">Rewarded build</p>
+          <h3>SoVibe</h3>
           <p>
-            AI-powered multi-strategy trading terminal for SoDex, designed as a
-            cyberpunk control room for market signals and execution.
+            AI-powered multi-strategy trading terminal for SoDex, built as a
+            control room for market signals and strategy execution.
           </p>
-          <div class="badges" aria-label="SoVibe badges">
+          <div class="badges">
             <span>SoSoValue Buildathon</span>
             <span>Rewarded Project</span>
-            <span>Trading Terminal</span>
           </div>
           <div class="card-actions">
             <a href="https://github.com/PhiBao/so-vibe" target="_blank" rel="noreferrer">Repo</a>
             <a href="https://so-vibe.vercel.app" target="_blank" rel="noreferrer">Live</a>
           </div>
         </article>
+
+        <article class="win-card">
+          <p class="card-kicker">Runner-up reward</p>
+          <h3>BlindDeal</h3>
+          <p>
+            Confidential P2P price negotiation on Fhenix. Achieved Runner-up
+            level and got rewarded on Akindo.
+          </p>
+          <div class="badges">
+            <span>Akindo Buildathon</span>
+            <span>Runner-up Reward</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/PhiBao/blind-deal" target="_blank" rel="noreferrer">Repo</a>
+            <a href="https://blind-deal.vercel.app" target="_blank" rel="noreferrer">Live</a>
+          </div>
+        </article>
       </section>
 
-      <section class="section-heading" aria-labelledby="systems-title">
+      <section class="section-head" id="builds" aria-labelledby="builds-title">
         <p class="eyebrow">Curated systems</p>
-        <h2 id="systems-title">Project Dossiers</h2>
+        <h2 id="builds-title">Live Build Feed</h2>
       </section>
 
-      <section class="dossier-grid" id="dossiers" aria-label="Curated project dossiers">
-        <article class="dossier" data-project="gotham">
-          <span class="repo-name">gotham-court</span>
-          <h3>Onchain dispute resolution</h3>
-          <p>AI-native court flow for decentralized conflict settlement on GenLayer.</p>
-          <div class="tech-row"><span>TypeScript</span><span>GenLayer</span><span>AI Governance</span></div>
-        </article>
-        <article class="dossier" data-project="sovibe">
-          <span class="repo-name">so-vibe</span>
-          <h3>Multi-strategy trading terminal</h3>
-          <p>Agentic signal surface for SoDex strategies, markets, and decision support.</p>
-          <div class="tech-row"><span>TypeScript</span><span>Crypto</span><span>Perpetuals</span></div>
-        </article>
-        <article class="dossier" data-project="guarded">
-          <span class="repo-name">guarded-alpha</span>
-          <h3>Security-first AI trading agent</h3>
-          <p>Python agent infrastructure focused on controlled trading behavior.</p>
-          <div class="tech-row"><span>Python</span><span>AI Agent</span><span>Trading</span></div>
-        </article>
-        <article class="dossier" data-project="yield">
-          <span class="repo-name">yield-mind</span>
-          <h3>AI-native yield automation</h3>
-          <p>Crypto yield workflow with agent-aware automation and strategy UX.</p>
-          <div class="tech-row"><span>TypeScript</span><span>Yield</span><span>Agents</span></div>
-        </article>
-        <article class="dossier" data-project="somtinel">
-          <span class="repo-name">somtinel</span>
-          <h3>Treasury risk responder</h3>
-          <p>Agent-driven treasury protection system built in the Somnia ecosystem.</p>
-          <div class="tech-row"><span>Solidity</span><span>Risk</span><span>Treasury</span></div>
-        </article>
-        <article class="dossier" data-project="aether">
-          <span class="repo-name">aether</span>
-          <h3>Swarm signal terminal</h3>
-          <p>Gamified AI trading signals powered by strategy swarm consensus.</p>
-          <div class="tech-row"><span>TypeScript</span><span>Mantle</span><span>Sentiment</span></div>
-        </article>
-        <article class="dossier" data-project="trustgrid">
-          <span class="repo-name">trust-grid-sol</span>
-          <h3>Agent marketplace</h3>
-          <p>Hire AI agents and settle work trustlessly on Solana rails.</p>
-          <div class="tech-row"><span>TypeScript</span><span>Solana</span><span>Marketplace</span></div>
-        </article>
-        <article class="dossier" data-project="cipher">
-          <span class="repo-name">cipher</span>
-          <h3>Private credit protocol</h3>
-          <p>FHE-powered credit scoring and micro-lending for privacy-preserving DeFi.</p>
-          <div class="tech-row"><span>TypeScript</span><span>Zama</span><span>FHE</span></div>
-        </article>
+      <section class="build-console" aria-label="Live build feed">
+        <div class="window-bar">
+          <span>builds.stream</span>
+          <span class="terminal-hint">auto cycling</span>
+        </div>
+        <div class="build-console-body">
+          <div class="feed-list" data-live-feed>
+            <button class="feed-row is-active" type="button" data-project="guarded">
+              <span class="feed-code">AI-01</span>
+              <span class="repo-name">guarded-alpha</span>
+              <span>Security-first AI trading agent</span>
+            </button>
+            <button class="feed-row" type="button" data-project="yield">
+              <span class="feed-code">DF-02</span>
+              <span class="repo-name">yield-mind</span>
+              <span>AI-native yield automation</span>
+            </button>
+            <button class="feed-row" type="button" data-project="somtinel">
+              <span class="feed-code">RS-03</span>
+              <span class="repo-name">somtinel</span>
+              <span>Agent-driven treasury risk responder</span>
+            </button>
+            <button class="feed-row" type="button" data-project="aether">
+              <span class="feed-code">SW-04</span>
+              <span class="repo-name">aether</span>
+              <span>Trading signals powered by swarm consensus</span>
+            </button>
+            <button class="feed-row" type="button" data-project="trustgrid">
+              <span class="feed-code">MK-05</span>
+              <span class="repo-name">trust-grid-sol</span>
+              <span>Hire AI agents and settle trustlessly</span>
+            </button>
+            <button class="feed-row" type="button" data-project="signalforge">
+              <span class="feed-code">RA-06</span>
+              <span class="repo-name">signal-forge</span>
+              <span>Autonomous agent selling market reasoning</span>
+            </button>
+          </div>
+          <article class="feed-detail" data-feed-detail>
+            <p class="card-kicker">selected build</p>
+            <h3>Guarded Alpha</h3>
+            <p>Security-first AI trading agent built in Python.</p>
+            <div class="card-actions">
+              <a href="https://github.com/PhiBao/guarded-alpha" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="terminal-zone" id="terminal" aria-labelledby="terminal-title">
-        <div class="section-heading terminal-heading">
+        <div class="section-head terminal-heading">
           <p class="eyebrow">Interactive surface</p>
           <h2 id="terminal-title">Command Console</h2>
         </div>
         <div class="terminal-window">
-          <div class="terminal-top">
+          <div class="window-bar">
             <span>kiter@phibao:~/portfolio</span>
             <span class="terminal-hint">type help</span>
           </div>
           <div class="terminal-output" id="terminal-output" aria-live="polite">
-            <p><span class="prompt">system</span> Boot sequence complete. Try <button class="inline-command" data-command="help">help</button>, <button class="inline-command" data-command="projects">projects</button>, or <button class="inline-command" data-command="open gotham">open gotham</button>.</p>
+            <p><span class="prompt">system</span> Boot complete. Try <button class="inline-command" data-command="help">help</button>, <button class="inline-command" data-command="projects">projects</button>, or <button class="inline-command" data-command="open gotham">open gotham</button>.</p>
           </div>
           <form class="terminal-input-row" id="terminal-form">
             <label for="terminal-input">Command</label>
@@ -212,6 +211,6 @@
       <a href="https://github.com/PhiBao/phibao.github.io" target="_blank" rel="noreferrer">source</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260612-ui2"></script>
   </body>
 </html>
