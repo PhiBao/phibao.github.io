@@ -11,11 +11,11 @@ const projects = {
     live: "https://so-vibe.vercel.app",
     detail: "SoSoValue Buildathon rewarded project. AI-powered multi-strategy terminal for SoDex.",
   },
-  guarded: {
-    title: "Guarded Alpha",
-    repo: "https://github.com/PhiBao/guarded-alpha",
-    live: "",
-    detail: "Security-first AI trading agent built in Python.",
+  hush: {
+    title: "Hush",
+    repo: "https://github.com/PhiBao/hush",
+    live: "https://hush-murex-iota.vercel.app",
+    detail: "Confidential payroll for the creator economy — encrypted subscriptions on Zama fhEVM.",
   },
   yield: {
     title: "Yield Mind",
@@ -61,7 +61,8 @@ const aliases = {
   "open so-vibe": "open sovibe",
   "open so vibe": "open sovibe",
   "open yield-mind": "open yield",
-  "open guarded-alpha": "open guarded",
+  "open guarded-alpha": "open hush",
+  "open guarded": "open hush",
   "open trust-grid-sol": "open trustgrid",
   "open blind-deal": "open blinddeal",
   "open blind deal": "open blinddeal",
@@ -93,7 +94,7 @@ function runCommand(rawCommand) {
   line(`<span class="prompt">kiter$</span> ${rawCommand || "help"}`);
 
   if (normalized === "help") {
-    line("<span class=\"prompt\">help</span> commands: projects, open gotham, open sovibe, open blinddeal, links, clear");
+    line("<span class=\"prompt\">help</span> commands: projects, open gotham, open hush, open blinddeal, links, clear");
     return;
   }
 

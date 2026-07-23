@@ -347,18 +347,45 @@ h1 {
 }
 
 .win-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.16fr) repeat(2, minmax(0, 0.92fr));
-  gap: 16px;
+  overflow: hidden;
   margin-bottom: 74px;
+}
+
+.win-track {
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+  animation: winMarquee 15s linear infinite;
+  will-change: transform;
+}
+
+.win-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .win-track {
+    animation: none;
+  }
 }
 
 .win-card {
   display: flex;
+  width: 370px;
   min-height: 330px;
+  flex: 0 0 auto;
   flex-direction: column;
   justify-content: space-between;
   padding: clamp(20px, 3vw, 30px);
+}
+
+@keyframes winMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .main-win {
@@ -553,7 +580,6 @@ h1 {
 
 @media (max-width: 1040px) {
   .hero,
-  .win-grid,
   .build-console-body {
     grid-template-columns: 1fr;
   }
