@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#070910">
+    <meta name="theme-color" content="#0a0813">
     <meta
       name="description"
       content="Kiter / PhiBao portfolio: DeFi agents, onchain systems, trading terminals, and hackathon-winning projects."
@@ -18,11 +18,13 @@
     <title>Kiter / PhiBao - Portfolio</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://avatars.githubusercontent.com">
-    <link rel="stylesheet" href="styles.css?v=20260723-win1">
+    <link rel="stylesheet" href="styles.css?v=20260917-violet1">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="page-glow" aria-hidden="true"></div>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="cursor-aura" aria-hidden="true"></div>
 
     <header class="topbar">
       <a class="brand" href="#main" aria-label="Kiter portfolio home">
@@ -39,7 +41,7 @@
 
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-main">
+        <div class="hero-main" data-reveal>
           <p class="eyebrow">DeFi agents / onchain apps / shipping mode</p>
           <h1 id="hero-title">Kiter / PhiBao</h1>
           <p class="slogan">I believe in markdown supremacy</p>
@@ -54,7 +56,7 @@
           </div>
         </div>
 
-        <aside class="operator-card" aria-label="Operator profile">
+        <aside class="operator-card" aria-label="Operator profile" data-reveal style="--reveal-delay: 120ms">
           <div class="window-bar">
             <span>operator.profile</span>
             <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
@@ -71,12 +73,12 @@
         </aside>
       </section>
 
-      <section class="section-head" id="wins" aria-labelledby="wins-title">
+      <section class="section-head" id="wins" aria-labelledby="wins-title" data-reveal>
         <p class="eyebrow">Proof of work</p>
         <h2 id="wins-title">Highlighted Wins</h2>
       </section>
 
-      <section class="win-grid" aria-label="Highlighted wins">
+      <section class="win-grid" aria-label="Highlighted wins" data-reveal>
         <div class="win-track">
           <article class="win-card main-win">
             <p class="card-kicker">Featured case file</p>
@@ -147,7 +149,7 @@
             </div>
           </article>
 
-          <article class="win-card main-win" aria-hidden="true">
+          <article class="win-card main-win" aria-hidden="true" inert>
             <p class="card-kicker">Featured case file</p>
             <h3>Gotham Court</h3>
             <p>
@@ -165,7 +167,7 @@
             </div>
           </article>
 
-          <article class="win-card" aria-hidden="true">
+          <article class="win-card" aria-hidden="true" inert>
             <p class="card-kicker">Rewarded build</p>
             <h3>SoVibe</h3>
             <p>
@@ -182,7 +184,7 @@
             </div>
           </article>
 
-          <article class="win-card" aria-hidden="true">
+          <article class="win-card" aria-hidden="true" inert>
             <p class="card-kicker">Runner-up reward</p>
             <h3>BlindDeal</h3>
             <p>
@@ -199,7 +201,7 @@
             </div>
           </article>
 
-          <article class="win-card" aria-hidden="true">
+          <article class="win-card" aria-hidden="true" inert>
             <p class="card-kicker">Track 1 finalist</p>
             <h3>Guarded Alpha</h3>
             <p>
@@ -218,62 +220,66 @@
         </div>
       </section>
 
-      <section class="section-head" id="builds" aria-labelledby="builds-title">
+      <section class="section-head" id="builds" aria-labelledby="builds-title" data-reveal>
         <p class="eyebrow">Curated systems</p>
         <h2 id="builds-title">Live Build Feed</h2>
       </section>
 
-      <section class="build-console" aria-label="Live build feed">
+      <section class="build-console" aria-label="Live build feed" data-reveal>
         <div class="window-bar">
           <span>builds.stream</span>
-          <span class="terminal-hint">auto cycling</span>
+          <div class="feed-controls">
+            <span class="terminal-hint" data-feed-status>curated / Sep 2026</span>
+            <button class="feed-toggle" type="button" data-feed-toggle hidden>Pause feed</button>
+          </div>
         </div>
         <div class="build-console-body">
           <div class="feed-list" data-live-feed>
-            <button class="feed-row is-active" type="button" data-project="hush">
-              <span class="feed-code">CP-01</span>
-              <span class="repo-name">hush</span>
-              <span>Confidential creator subscriptions</span>
+            <button class="feed-row is-active" type="button" data-project="rakshak" aria-pressed="true" aria-controls="build-detail">
+              <span class="feed-code">AI-01</span>
+              <span class="repo-name">rakshak</span>
+              <span>Real-time defence against phone scams</span>
             </button>
-            <button class="feed-row" type="button" data-project="yield">
-              <span class="feed-code">DF-02</span>
-              <span class="repo-name">yield-mind</span>
-              <span>AI-native yield automation</span>
+            <button class="feed-row" type="button" data-project="advocate" aria-pressed="false" aria-controls="build-detail">
+              <span class="feed-code">HC-02</span>
+              <span class="repo-name">advocate</span>
+              <span>Medical-bill appeals, verified twice</span>
             </button>
-            <button class="feed-row" type="button" data-project="somtinel">
-              <span class="feed-code">RS-03</span>
-              <span class="repo-name">somtinel</span>
-              <span>Agent-driven treasury risk responder</span>
+            <button class="feed-row" type="button" data-project="wpilot" aria-pressed="false" aria-controls="build-detail">
+              <span class="feed-code">OP-03</span>
+              <span class="repo-name">wpilot</span>
+              <span>Volunteer shift backfill with human approval</span>
             </button>
-            <button class="feed-row" type="button" data-project="aether">
-              <span class="feed-code">SW-04</span>
-              <span class="repo-name">aether</span>
-              <span>Trading signals powered by swarm consensus</span>
+            <button class="feed-row" type="button" data-project="recall" aria-pressed="false" aria-controls="build-detail">
+              <span class="feed-code">MM-04</span>
+              <span class="repo-name">recall</span>
+              <span>Relationship memory with source citations</span>
             </button>
-            <button class="feed-row" type="button" data-project="trustgrid">
-              <span class="feed-code">MK-05</span>
-              <span class="repo-name">trust-grid-sol</span>
-              <span>Hire AI agents and settle trustlessly</span>
+            <button class="feed-row" type="button" data-project="signedoff" aria-pressed="false" aria-controls="build-detail">
+              <span class="feed-code">DX-05</span>
+              <span class="repo-name">signed-off</span>
+              <span>Browser evidence for freelance handovers</span>
             </button>
-            <button class="feed-row" type="button" data-project="signalforge">
-              <span class="feed-code">RA-06</span>
-              <span class="repo-name">signal-forge</span>
-              <span>Autonomous agent selling market reasoning</span>
+            <button class="feed-row" type="button" data-project="halt" aria-pressed="false" aria-controls="build-detail">
+              <span class="feed-code">SF-06</span>
+              <span class="repo-name">halt</span>
+              <span>A circuit breaker for autonomous agents</span>
             </button>
           </div>
-          <article class="feed-detail" data-feed-detail>
-            <p class="card-kicker">selected build</p>
-            <h3>Hush</h3>
-            <p>Confidential payroll for the creator economy — encrypted subscriptions on Zama fhEVM.</p>
+          <article class="feed-detail" id="build-detail" data-feed-detail aria-labelledby="build-detail-title">
+            <p class="card-kicker">01 / 06 — voice AI / safety</p>
+            <h3 id="build-detail-title">Rakshak</h3>
+            <div class="feed-meta"><span>Voice AI</span><span>Real-time alerts</span><span>Evidence packs</span></div>
+            <p>An AI guardian for phone fraud: recognises scam scripts during a call, warns the person being targeted, and alerts their family.</p>
+            <p class="feed-proof">Beyond a chatbot: Hindi and English voice warnings, a live family transcript, and a filing-ready complaint pack.</p>
             <div class="card-actions">
-              <a href="https://github.com/PhiBao/hush" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://hush-murex-iota.vercel.app" target="_blank" rel="noreferrer">Live</a>
+              <a href="https://github.com/PhiBao/rakshak" target="_blank" rel="noreferrer">Explore repo ↗</a>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="terminal-zone" id="terminal" aria-labelledby="terminal-title">
+      <section class="terminal-zone" id="terminal" aria-labelledby="terminal-title" data-reveal>
         <div class="section-head terminal-heading">
           <p class="eyebrow">Interactive surface</p>
           <h2 id="terminal-title">Command Console</h2>
@@ -300,6 +306,6 @@
       <a href="https://github.com/PhiBao/phibao.github.io" target="_blank" rel="noreferrer">source</a>
     </footer>
 
-    <script src="script.js?v=20260723-win1"></script>
+    <script src="script.js?v=20260917-violet1"></script>
   </body>
 </html>
