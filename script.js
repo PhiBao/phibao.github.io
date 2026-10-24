@@ -384,6 +384,10 @@ feedRows.forEach((card) => {
   });
 });
 
+document.querySelectorAll('.win-card[aria-hidden="true"] a').forEach((link) => {
+  link.tabIndex = -1;
+});
+
 const finePointerMotion = window.matchMedia("(hover: hover) and (pointer: fine)");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const cursorAura = document.querySelector(".cursor-aura");
