@@ -3,381 +3,493 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0a0813">
+    <meta name="theme-color" content="#07060b">
     <meta
       name="description"
-      content="Kiter / PhiBao portfolio: DeFi agents, onchain systems, trading terminals, and hackathon-winning projects."
+      content="Kiter / Phi Bao — independent builder of autonomous agents, market infrastructure, and onchain products. Binance Agent OS Track A winner. CoinMarketCap Top 30."
     >
-    <meta property="og:title" content="Kiter / PhiBao - Portfolio">
+    <meta property="og:title" content="Kiter / Phi Bao — Onchain Systems &amp; AI Agents">
     <meta
       property="og:description"
-      content="DeFi agents, onchain systems, trading terminals, and hackathon-winning projects."
+      content="Autonomous agents, market infrastructure, and onchain products. Six winner builds. Shipped from first commit to mainnet."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://phibao.github.io/">
-    <title>Kiter / PhiBao - Portfolio</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="Kiter / Phi Bao">
+    <meta property="og:image" content="https://phibao.github.io/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kiter / Phi Bao — Onchain Systems &amp; AI Agents">
+    <meta name="twitter:description" content="Autonomous agents, market infrastructure, and onchain products.">
+    <meta name="twitter:image" content="https://phibao.github.io/og.png">
+    <link rel="canonical" href="https://phibao.github.io/">
+    <title>Kiter / Phi Bao — Onchain Systems &amp; AI Agents</title>
+    <link rel="icon" href="favicon.svg?v=20261024-dossier1" type="image/svg+xml">
     <link rel="preconnect" href="https://avatars.githubusercontent.com">
-    <link rel="stylesheet" href="styles.css?v=20261024-wins">
+    <link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css?v=20261024-dossier1">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Phi Bao",
+        "alternateName": "Kiter",
+        "url": "https://phibao.github.io/",
+        "jobTitle": "Independent builder",
+        "knowsAbout": ["AI agents", "DeFi", "Onchain systems", "Trading infrastructure"],
+        "sameAs": [
+          "https://github.com/PhiBao",
+          "https://x.com/0xKiter",
+          "https://t.me/kiter9",
+          "https://myanimelist.net/profile/Kiter"
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="page-glow" aria-hidden="true"></div>
-    <div class="aurora" aria-hidden="true"></div>
-    <div class="cursor-aura" aria-hidden="true"></div>
+
+    <div class="fx-grid" aria-hidden="true"></div>
+    <div class="fx-glow" aria-hidden="true"></div>
+    <div class="fx-noise" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+    <div class="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-dot"></span></div>
 
     <header class="topbar">
       <a class="brand" href="#main" aria-label="Kiter portfolio home">
-        <span class="brand-mark">K</span>
-        <span>Kiter OS</span>
+        <span class="brand-mark" aria-hidden="true">K<span class="brand-cursor"></span></span>
+        <span class="brand-copy">
+          <strong>Kiter</strong>
+          <small>Phi Bao</small>
+        </span>
       </a>
+
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#wins">Wins</a>
-        <a href="#builds">Builds</a>
-        <a href="#terminal">Terminal</a>
+        <a href="#wins"><span>01</span>Wins</a>
+        <a href="#builds"><span>02</span>Builds</a>
+        <a href="#contact"><span>03</span>Contact</a>
       </nav>
-      <span class="online"><i aria-hidden="true"></i>online</span>
+
+      <div class="system">
+        <span class="system-status" title="Open to build"><i aria-hidden="true"></i><span class="status-label">Open to build</span></span>
+        <span class="system-clock"><span>UTC</span><time data-clock>00:00:00</time></span>
+      </div>
     </header>
+
+    <aside class="rail" aria-hidden="true">
+      <span class="rail-copy">Operator console / 2026</span>
+      <span class="rail-line"></span>
+      <span class="rail-copy rail-copy-end">Kiter / Phi Bao</span>
+    </aside>
 
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-main" data-reveal>
-          <p class="eyebrow">DeFi agents / onchain apps / shipping mode</p>
-          <h1 id="hero-title">Kiter / PhiBao</h1>
-          <p class="slogan">I believe in markdown supremacy</p>
-          <p class="hero-lede">
-            I love DeFi, AI, and agents.
-          </p>
-          <div class="hero-actions" aria-label="Profile links">
-            <a class="button primary" href="https://github.com/PhiBao" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="button" href="https://x.com/0xKiter" target="_blank" rel="noreferrer">X</a>
-            <a class="button" href="https://t.me/kiter9" target="_blank" rel="noreferrer">Telegram</a>
-            <a class="button" href="https://myanimelist.net/profile/Kiter" target="_blank" rel="noreferrer">MAL</a>
-          </div>
-        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-scramble="Phi Bao / Operator dossier">Phi Bao / Operator dossier</p>
 
-        <aside class="operator-card" aria-label="Operator profile" data-reveal style="--reveal-delay: 120ms">
-          <div class="window-bar">
-            <span>operator.profile</span>
-            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-          </div>
-          <div class="operator-body">
-            <img src="https://avatars.githubusercontent.com/u/43992076?v=4" alt="PhiBao GitHub avatar">
-            <dl>
-              <div><dt>focus</dt><dd>AI /agents/ DeFi</dd></div>
-              <div><dt>stack</dt><dd>TS / Python / Solidity</dd></div>
-              <div><dt>style</dt><dd>terminal-first</dd></div>
-              <div><dt>signal</dt><dd>hackathon proven</dd></div>
+            <h1 id="hero-title">
+              <span class="hero-name"><span class="hero-accent">K</span>ITER</span>
+              <span class="hero-alias">Phi Bao</span>
+            </h1>
+
+            <p class="hero-statement">I build autonomous systems for markets.</p>
+
+            <p class="hero-lede">
+              Trading agents, payment rails, and onchain tools — taken from a blank
+              repo to a deployed contract, then pressure-tested in public.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#wins">See the proof <span aria-hidden="true">↓</span></a>
+              <a class="btn" href="#contact">Open console <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <dl class="hero-stats" aria-label="Track record">
+              <div>
+                <dt>Winner builds</dt>
+                <dd>06</dd>
+              </div>
+              <div>
+                <dt>Attempts</dt>
+                <dd>20+</dd>
+              </div>
             </dl>
           </div>
-        </aside>
-      </section>
 
-      <section class="section-head" id="wins" aria-labelledby="wins-title" data-reveal>
-        <p class="eyebrow">Proof of work</p>
-        <h2 id="wins-title">Highlighted Wins</h2>
-      </section>
+          <aside class="dossier" aria-label="Operator profile">
+            <div class="dossier-bar">
+              <span>operator.profile</span>
+              <span class="bar-state"><i aria-hidden="true"></i>live</span>
+            </div>
 
-      <section class="win-grid" aria-label="Highlighted wins" data-reveal>
-        <div class="win-track">
-          <article class="win-card main-win">
-            <p class="card-kicker">Fresh win — Track A</p>
-            <h3>Ratchet</h3>
-            <p>
-              A self-improving Binance spot-trading agent: every trade carries a
-              checkable thesis, every close is graded on decision quality, and each
-              session curates lessons into a versioned playbook.
-            </p>
-            <div class="badges">
-              <span>Binance Agent OS Mini Hackathon</span>
-              <span>Track A Winner</span>
-              <span>Rewarded</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/ratchet" target="_blank" rel="noreferrer">Repo</a>
-            </div>
-          </article>
+            <div class="dossier-main">
+              <div class="operator">
+                <img
+                  src="https://avatars.githubusercontent.com/u/43992076?v=4"
+                  alt="Phi Bao GitHub avatar"
+                  width="72"
+                  height="72"
+                >
+                <div>
+                  <p class="operator-name">Phi Bao</p>
+                  <p class="operator-role">Independent builder</p>
+                </div>
+              </div>
 
-          <article class="win-card">
-            <p class="card-kicker">Top 30 — rewarded</p>
-            <h3>Parity</h3>
-            <p>
-              Fair-price and wrapper-spread layer for tokenised stocks, built on
-              CoinMarketCap's RWA API — see the premium before you pay it.
-            </p>
-            <div class="badges">
-              <span>Build with CMC: API Hackathon</span>
-              <span>Top 30 Winner</span>
-              <span>Rewarded</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/parity" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://dorahacks.io/hackathon/coinmarketcap-api-202609/winner" target="_blank" rel="noreferrer">DoraHacks</a>
-            </div>
-          </article>
+              <div class="readout" aria-hidden="true">
+                <p><span class="readout-prompt">$</span> whoami</p>
+                <p class="readout-out">kiter — phi bao</p>
+                <p><span class="readout-prompt">$</span> focus --now</p>
+                <p class="readout-out">agents / defi / onchain</p>
+                <p><span class="readout-prompt">$</span> status</p>
+                <p class="readout-out is-live"><span class="pulse"></span>shipping</p>
+              </div>
 
-          <article class="win-card main-win">
-            <p class="card-kicker">Featured case file</p>
-            <h3>Gotham Court</h3>
-            <p>
-              Decentralized dispute resolution on GenLayer's AI-native blockchain,
-              built around explainable adjudication and onchain execution.
-            </p>
-            <div class="badges">
-              <span>GenLayer Bradbury</span>
-              <span>Onchain Justice Winner</span>
-              <span>AI Governance</span>
+              <dl class="operator-meta">
+                <div><dt>focus</dt><dd>agents / defi</dd></div>
+                <div><dt>stack</dt><dd>TS / PY / SOL</dd></div>
+                <div><dt>mode</dt><dd>terminal-first</dd></div>
+                <div><dt>winner builds</dt><dd>06 total</dd></div>
+              </dl>
             </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/gotham-court" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://dorahacks.io/buidl/41898" target="_blank" rel="noreferrer">DoraHacks</a>
-            </div>
-          </article>
 
-          <article class="win-card">
-            <p class="card-kicker">Rewarded build</p>
-            <h3>SoVibe</h3>
-            <p>
-              AI-powered multi-strategy trading terminal for SoDex, built as a
-              control room for market signals and strategy execution.
-            </p>
-            <div class="badges">
-              <span>SoSoValue Buildathon</span>
-              <span>Rewarded Project</span>
+            <div class="dossier-foot">
+              <span>session / 2026</span>
+              <span class="dossier-signal"><i aria-hidden="true"></i>available for select work</span>
             </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/so-vibe" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://app.akindo.io/communities/1PrjMj61aiJnq8mJ/products/4e4Pg0MZzf2XzLOjX" target="_blank" rel="noreferrer">Akindo</a>
-            </div>
-          </article>
+          </aside>
+        </div>
 
-          <article class="win-card">
-            <p class="card-kicker">Runner-up reward</p>
-            <h3>BlindDeal</h3>
-            <p>
-              Confidential P2P price negotiation on Fhenix. Achieved Runner-up
-              level and got rewarded on Akindo.
-            </p>
-            <div class="badges">
-              <span>Akindo Buildathon</span>
-              <span>Runner-up Reward</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/blind-deal" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://app.akindo.io/communities/1PrjMj61aiJnq8mJ/products/A8Gjrge6LSVLGpeA" target="_blank" rel="noreferrer">Akindo</a>
-            </div>
-          </article>
-
-          <article class="win-card">
-            <p class="card-kicker">Track 1 finalist</p>
-            <h3>Guarded Alpha</h3>
-            <p>
-              Self-custodial AI trading agent for BNB Chain. Achieved 4th place
-              on Track 1 of BNB Hack and won $2,000.
-            </p>
-            <div class="badges">
-              <span>BNB Hack: AI Trading Agent</span>
-              <span>4th Place - Track 1</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/guarded-alpha" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://dorahacks.io/buidl/44861" target="_blank" rel="noreferrer">DoraHacks</a>
-            </div>
-          </article>
-
-          <article class="win-card main-win" aria-hidden="true">
-            <p class="card-kicker">Fresh win — Track A</p>
-            <h3>Ratchet</h3>
-            <p>
-              A self-improving Binance spot-trading agent: every trade carries a
-              checkable thesis, every close is graded on decision quality, and each
-              session curates lessons into a versioned playbook.
-            </p>
-            <div class="badges">
-              <span>Binance Agent OS Mini Hackathon</span>
-              <span>Track A Winner</span>
-              <span>Rewarded</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/ratchet" target="_blank" rel="noreferrer">Repo</a>
-            </div>
-          </article>
-
-          <article class="win-card" aria-hidden="true">
-            <p class="card-kicker">Top 30 — rewarded</p>
-            <h3>Parity</h3>
-            <p>
-              Fair-price and wrapper-spread layer for tokenised stocks, built on
-              CoinMarketCap's RWA API — see the premium before you pay it.
-            </p>
-            <div class="badges">
-              <span>Build with CMC: API Hackathon</span>
-              <span>Top 30 Winner</span>
-              <span>Rewarded</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/parity" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://dorahacks.io/hackathon/coinmarketcap-api-202609/winner" target="_blank" rel="noreferrer">DoraHacks</a>
-            </div>
-          </article>
-
-          <article class="win-card main-win" aria-hidden="true">
-            <p class="card-kicker">Featured case file</p>
-            <h3>Gotham Court</h3>
-            <p>
-              Decentralized dispute resolution on GenLayer's AI-native blockchain,
-              built around explainable adjudication and onchain execution.
-            </p>
-            <div class="badges">
-              <span>GenLayer Bradbury</span>
-              <span>Onchain Justice Winner</span>
-              <span>AI Governance</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/gotham-court" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://dorahacks.io/buidl/41898" target="_blank" rel="noreferrer">DoraHacks</a>
-            </div>
-          </article>
-
-          <article class="win-card" aria-hidden="true">
-            <p class="card-kicker">Rewarded build</p>
-            <h3>SoVibe</h3>
-            <p>
-              AI-powered multi-strategy trading terminal for SoDex, built as a
-              control room for market signals and strategy execution.
-            </p>
-            <div class="badges">
-              <span>SoSoValue Buildathon</span>
-              <span>Rewarded Project</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/so-vibe" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://app.akindo.io/communities/1PrjMj61aiJnq8mJ/products/4e4Pg0MZzf2XzLOjX" target="_blank" rel="noreferrer">Akindo</a>
-            </div>
-          </article>
-
-          <article class="win-card" aria-hidden="true">
-            <p class="card-kicker">Runner-up reward</p>
-            <h3>BlindDeal</h3>
-            <p>
-              Confidential P2P price negotiation on Fhenix. Achieved Runner-up
-              level and got rewarded on Akindo.
-            </p>
-            <div class="badges">
-              <span>Akindo Buildathon</span>
-              <span>Runner-up Reward</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/blind-deal" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://app.akindo.io/communities/1PrjMj61aiJnq8mJ/products/A8Gjrge6LSVLGpeA" target="_blank" rel="noreferrer">Akindo</a>
-            </div>
-          </article>
-
-          <article class="win-card" aria-hidden="true">
-            <p class="card-kicker">Track 1 finalist</p>
-            <h3>Guarded Alpha</h3>
-            <p>
-              Self-custodial AI trading agent for BNB Chain. Achieved 4th place
-              on Track 1 of BNB Hack and won $2,000.
-            </p>
-            <div class="badges">
-              <span>BNB Hack: AI Trading Agent</span>
-              <span>4th Place - Track 1</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/guarded-alpha" target="_blank" rel="noreferrer">Repo</a>
-              <a href="https://dorahacks.io/buidl/44861" target="_blank" rel="noreferrer">DoraHacks</a>
-            </div>
-          </article>
+        <div class="hero-foot" aria-hidden="true">
+          <span>Scroll to explore</span>
+          <span class="hero-foot-line"></span>
+          <span>Build / ship / repeat</span>
         </div>
       </section>
 
-      <section class="section-head" id="builds" aria-labelledby="builds-title" data-reveal>
-        <p class="eyebrow">Curated systems</p>
-        <h2 id="builds-title">Live Build Feed</h2>
-      </section>
-
-      <section class="build-console" aria-label="Live build feed" data-reveal>
-        <div class="window-bar">
-          <span>builds.stream</span>
-          <div class="feed-controls">
-            <span class="terminal-hint" data-feed-status>curated / Oct 2026</span>
-            <button class="feed-toggle" type="button" data-feed-toggle hidden>Pause feed</button>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track" data-ticker>
+          <div class="ticker-group">
+            <span>Ratchet — Binance Agent OS Track A winner</span>
+            <i aria-hidden="true">✦</i>
+            <span>Parity — CoinMarketCap Top 30</span>
+            <i aria-hidden="true">✦</i>
+            <span>Gotham Court — Onchain Justice winner</span>
+            <i aria-hidden="true">✦</i>
+            <span>Guarded Alpha — 4th, BNB Hack</span>
+            <i aria-hidden="true">✦</i>
+            <span>SoVibe — winner build</span>
+            <i aria-hidden="true">✦</i>
+            <span>BlindDeal — winner build</span>
+            <i aria-hidden="true">✦</i>
+          </div>
+          <div class="ticker-group" aria-hidden="true">
+            <span>Ratchet — Binance Agent OS Track A winner</span>
+            <i>✦</i>
+            <span>Parity — CoinMarketCap Top 30</span>
+            <i>✦</i>
+            <span>Gotham Court — Onchain Justice winner</span>
+            <i>✦</i>
+            <span>Guarded Alpha — 4th, BNB Hack</span>
+            <i>✦</i>
+            <span>SoVibe — winner build</span>
+            <i>✦</i>
+            <span>BlindDeal — winner build</span>
+            <i>✦</i>
           </div>
         </div>
-        <div class="build-console-body">
-          <div class="feed-list" data-live-feed>
-            <button class="feed-row is-active" type="button" data-project="vericall" aria-pressed="true" aria-controls="build-detail">
-              <span class="feed-code">AG-01</span>
-              <span class="repo-name">vericall</span>
-              <span>Escrowed USDC for API calls, settled on delivery</span>
-            </button>
-            <button class="feed-row" type="button" data-project="verbatim" aria-pressed="false" aria-controls="build-detail">
-              <span class="feed-code">RS-02</span>
-              <span class="repo-name">verbatim</span>
-              <span>Every research sentence carries a receipt</span>
-            </button>
-            <button class="feed-row" type="button" data-project="pylon" aria-pressed="false" aria-controls="build-detail">
-              <span class="feed-code">DF-03</span>
-              <span class="repo-name">pylon-mezo</span>
-              <span>Flash leverage and a redemption shield for Mezo BTC</span>
-            </button>
-            <button class="feed-row" type="button" data-project="fairbuy" aria-pressed="false" aria-controls="build-detail">
-              <span class="feed-code">EX-04</span>
-              <span class="repo-name">fairbuy</span>
-              <span>Blocks overpaying stock fills on Solana</span>
-            </button>
-            <button class="feed-row" type="button" data-project="kindly" aria-pressed="false" aria-controls="build-detail">
-              <span class="feed-code">AP-05</span>
-              <span class="repo-name">kindly</span>
-              <span>Collections agent that negotiates within limits</span>
-            </button>
-            <button class="feed-row" type="button" data-project="wemadeit" aria-pressed="false" aria-controls="build-detail">
-              <span class="feed-code">CP-06</span>
-              <span class="repo-name">wemadeit</span>
-              <span>Group payments that only move if everyone means it</span>
-            </button>
+      </div>
+
+      <section class="section" id="wins" aria-labelledby="wins-title">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="section-label"><span>01</span> Proof of work</p>
+            <h2 id="wins-title">Built to place.<br><span class="dim">Shipped to stay.</span></h2>
           </div>
-          <article class="feed-detail" id="build-detail" data-feed-detail aria-labelledby="build-detail-title">
-            <p class="card-kicker">01 / 06 — agent payments / escrow</p>
-            <h3 id="build-detail-title">VeriCall</h3>
-            <div class="feed-meta"><span>Arc mainnet</span><span>USDC escrow</span><span>Schema-aware</span></div>
-            <p>Escrow a USDC payment for a software-to-software API call and settle it against the promise the API published.</p>
-            <p class="feed-proof">Payment releases only when latency and response schema match — and splits to upstream dependencies in the same transaction.</p>
-            <div class="card-actions">
-              <a href="https://github.com/PhiBao/vericall" target="_blank" rel="noreferrer">Explore repo ↗</a>
+          <p class="section-note">Six winner builds<br>2025 — 2026</p>
+        </header>
+
+        <div class="featured-wins">
+          <article class="case" data-reveal>
+            <span class="case-ghost" aria-hidden="true">01</span>
+            <div class="case-top">
+              <span class="case-index">01</span>
+              <span class="case-status"><i aria-hidden="true"></i>Track A winner</span>
+            </div>
+            <div class="case-copy">
+              <p class="case-kicker">Binance Agent OS Mini Hackathon</p>
+              <h3>Ratchet</h3>
+              <p>
+                A self-improving Binance spot-trading agent. Every trade carries a
+                checkable thesis, every close is graded on decision quality, and each
+                session writes the lesson into a versioned playbook.
+              </p>
+            </div>
+            <div class="case-meta">
+              <span>Self-improving</span>
+              <span>Spot trading</span>
+              <span>Winner build</span>
+            </div>
+            <div class="case-foot">
+              <a class="case-link" href="https://github.com/PhiBao/ratchet" target="_blank" rel="noreferrer">
+                View repo <span aria-hidden="true">↗</span>
+              </a>
+              <span class="case-year">2026</span>
+            </div>
+          </article>
+
+          <article class="case" data-reveal style="--reveal-delay: 90ms">
+            <span class="case-ghost" aria-hidden="true">02</span>
+            <div class="case-top">
+              <span class="case-index">02</span>
+              <span class="case-status"><i aria-hidden="true"></i>Top 30 / winner</span>
+            </div>
+            <div class="case-copy">
+              <p class="case-kicker">Build with CMC: API Hackathon</p>
+              <h3>Parity</h3>
+              <p>
+                A fair-price and wrapper-spread layer for tokenised stocks, built on
+                CoinMarketCap's RWA API — see the premium before you pay it.
+              </p>
+            </div>
+            <div class="case-meta">
+              <span>RWA</span>
+              <span>Fair pricing</span>
+              <span>Winner build</span>
+            </div>
+            <div class="case-foot">
+              <a class="case-link" href="https://github.com/PhiBao/parity" target="_blank" rel="noreferrer">
+                View repo <span aria-hidden="true">↗</span>
+              </a>
+              <a class="case-link case-link-muted" href="https://dorahacks.io/hackathon/coinmarketcap-api-202609/winner" target="_blank" rel="noreferrer">
+                Winners list <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </article>
         </div>
+
+        <div class="win-list" data-reveal>
+          <div class="win-row">
+            <span class="win-num">03</span>
+            <div class="win-main">
+              <a class="win-name" href="https://github.com/PhiBao/gotham-court" target="_blank" rel="noreferrer">Gotham Court</a>
+              <span class="win-org">GenLayer Bradbury</span>
+            </div>
+            <span class="win-award">Onchain Justice winner</span>
+            <div class="win-links">
+              <a href="https://github.com/PhiBao/gotham-court" target="_blank" rel="noreferrer" aria-label="Gotham Court repo">Repo</a>
+              <a href="https://dorahacks.io/buidl/41898" target="_blank" rel="noreferrer" aria-label="Gotham Court on DoraHacks">Proof ↗</a>
+            </div>
+          </div>
+
+          <div class="win-row">
+            <span class="win-num">04</span>
+            <div class="win-main">
+              <a class="win-name" href="https://github.com/PhiBao/so-vibe" target="_blank" rel="noreferrer">SoVibe</a>
+              <span class="win-org">SoSoValue Buildathon</span>
+            </div>
+            <span class="win-award">Winner build</span>
+            <div class="win-links">
+              <a href="https://github.com/PhiBao/so-vibe" target="_blank" rel="noreferrer" aria-label="SoVibe repo">Repo</a>
+              <a href="https://app.akindo.io/communities/1PrjMj61aiJnq8mJ/products/4e4Pg0MZzf2XzLOjX" target="_blank" rel="noreferrer" aria-label="SoVibe on Akindo">Proof ↗</a>
+            </div>
+          </div>
+
+          <div class="win-row">
+            <span class="win-num">05</span>
+            <div class="win-main">
+              <a class="win-name" href="https://github.com/PhiBao/blind-deal" target="_blank" rel="noreferrer">BlindDeal</a>
+              <span class="win-org">Akindo Buildathon</span>
+            </div>
+            <span class="win-award">Winner build</span>
+            <div class="win-links">
+              <a href="https://github.com/PhiBao/blind-deal" target="_blank" rel="noreferrer" aria-label="BlindDeal repo">Repo</a>
+              <a href="https://app.akindo.io/communities/1PrjMj61aiJnq8mJ/products/A8Gjrge6LSVLGpeA" target="_blank" rel="noreferrer" aria-label="BlindDeal on Akindo">Proof ↗</a>
+            </div>
+          </div>
+
+          <div class="win-row">
+            <span class="win-num">06</span>
+            <div class="win-main">
+              <a class="win-name" href="https://github.com/PhiBao/guarded-alpha" target="_blank" rel="noreferrer">Guarded Alpha</a>
+              <span class="win-org">BNB Hack: AI Trading Agent</span>
+            </div>
+            <span class="win-award">4th place — Track 1 / $2,000</span>
+            <div class="win-links">
+              <a href="https://github.com/PhiBao/guarded-alpha" target="_blank" rel="noreferrer" aria-label="Guarded Alpha repo">Repo</a>
+              <a href="https://dorahacks.io/buidl/44861" target="_blank" rel="noreferrer" aria-label="Guarded Alpha on DoraHacks">Proof ↗</a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="terminal-zone" id="terminal" aria-labelledby="terminal-title" data-reveal>
-        <div class="section-head terminal-heading">
-          <p class="eyebrow">Interactive surface</p>
-          <h2 id="terminal-title">Command Console</h2>
-        </div>
-        <div class="terminal-window">
-          <div class="window-bar">
-            <span>kiter@phibao:~/portfolio</span>
-            <span class="terminal-hint">type help</span>
+      <section class="section" id="builds" aria-labelledby="builds-title">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="section-label"><span>02</span> Build log</p>
+            <h2 id="builds-title">Systems,<br><span class="dim">not screenshots.</span></h2>
           </div>
-          <div class="terminal-output" id="terminal-output" aria-live="polite">
-            <p><span class="prompt">system</span> Boot complete. Try <button class="inline-command" data-command="help">help</button>, <button class="inline-command" data-command="projects">projects</button>, or <button class="inline-command" data-command="open vericall">open vericall</button>.</p>
+          <p class="section-note">Selected repos<br>October 2026</p>
+        </header>
+
+        <p class="section-lede" data-reveal>
+          Six current builds. Click a row to inspect the pipeline.
+        </p>
+
+        <section class="console" aria-label="Live build feed" data-reveal>
+          <div class="console-bar">
+            <span class="console-title"><i aria-hidden="true"></i>builds.log</span>
+            <div class="console-tools">
+              <span class="console-status" data-feed-status>auto / 01 of 06</span>
+              <button class="console-toggle" type="button" data-feed-toggle hidden>Pause</button>
+            </div>
           </div>
-          <form class="terminal-input-row" id="terminal-form">
-            <label for="terminal-input">Command</label>
-            <span class="prompt">kiter$</span>
-            <input id="terminal-input" name="command" type="text" autocomplete="off" spellcheck="false" placeholder="help">
-          </form>
+
+          <div class="console-body">
+            <div class="build-index" data-live-feed>
+              <button class="build-row is-active" type="button" data-project="vericall" aria-pressed="true" aria-controls="build-detail">
+                <span class="build-num">01</span>
+                <span class="build-copy">
+                  <span class="build-name">vericall</span>
+                  <span class="build-desc">Escrowed USDC for API calls</span>
+                </span>
+                <span class="build-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="build-row" type="button" data-project="verbatim" aria-pressed="false" aria-controls="build-detail">
+                <span class="build-num">02</span>
+                <span class="build-copy">
+                  <span class="build-name">verbatim</span>
+                  <span class="build-desc">Research with receipts</span>
+                </span>
+                <span class="build-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="build-row" type="button" data-project="pylon" aria-pressed="false" aria-controls="build-detail">
+                <span class="build-num">03</span>
+                <span class="build-copy">
+                  <span class="build-name">pylon-mezo</span>
+                  <span class="build-desc">Leverage and a redemption shield</span>
+                </span>
+                <span class="build-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="build-row" type="button" data-project="fairbuy" aria-pressed="false" aria-controls="build-detail">
+                <span class="build-num">04</span>
+                <span class="build-copy">
+                  <span class="build-name">fairbuy</span>
+                  <span class="build-desc">Fair fills for tokenised stocks</span>
+                </span>
+                <span class="build-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="build-row" type="button" data-project="kindly" aria-pressed="false" aria-controls="build-detail">
+                <span class="build-num">05</span>
+                <span class="build-copy">
+                  <span class="build-name">kindly</span>
+                  <span class="build-desc">Collections within limits</span>
+                </span>
+                <span class="build-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="build-row" type="button" data-project="wemadeit" aria-pressed="false" aria-controls="build-detail">
+                <span class="build-num">06</span>
+                <span class="build-copy">
+                  <span class="build-name">wemadeit</span>
+                  <span class="build-desc">Group payments, conditional</span>
+                </span>
+                <span class="build-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+
+            <article class="build-detail" id="build-detail" data-feed-detail aria-labelledby="build-detail-title">
+              <div class="build-detail-top">
+                <span class="build-count">01 / 06 — agent payments / escrow</span>
+                <span class="build-repo-state">repo / public</span>
+              </div>
+              <div class="build-scan" aria-hidden="true"><span></span></div>
+              <h3 id="build-detail-title">VeriCall</h3>
+              <p class="build-detail-copy">Escrow a USDC payment for a software-to-software API call and settle it against the promise the API published.</p>
+              <div class="chips"><span>Arc mainnet</span><span>USDC escrow</span><span>Schema-aware</span></div>
+              <div class="proof">
+                <span class="proof-label">Proof</span>
+                <p>Payment releases only when latency and response schema match — and splits to upstream dependencies in the same transaction.</p>
+              </div>
+              <a class="build-link" href="https://github.com/PhiBao/vericall" target="_blank" rel="noreferrer">
+                Explore repo <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="section-label"><span>03</span> Open channel</p>
+            <h2 id="contact-title">Have a hard problem?<br><span class="dim">Let's ship it.</span></h2>
+          </div>
+          <p class="section-note">No pitch decks<br>Just the work</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-copy" data-reveal>
+            <p>
+              I'm interested in agent infrastructure, market systems, and anything
+              that has to survive contact with mainnet. Send a problem, a repo, or a
+              deadline.
+            </p>
+
+            <div class="contact-list">
+              <a class="contact-link" href="https://t.me/kiter9" target="_blank" rel="noreferrer">
+                <span><small>Fastest</small>Telegram</span>
+                <span class="contact-handle">@kiter9 <i aria-hidden="true">↗</i></span>
+              </a>
+              <a class="contact-link" href="https://x.com/0xKiter" target="_blank" rel="noreferrer">
+                <span><small>Signal</small>X</span>
+                <span class="contact-handle">@0xKiter <i aria-hidden="true">↗</i></span>
+              </a>
+              <a class="contact-link" href="https://github.com/PhiBao" target="_blank" rel="noreferrer">
+                <span><small>Code</small>GitHub</span>
+                <span class="contact-handle">/PhiBao <i aria-hidden="true">↗</i></span>
+              </a>
+              <a class="contact-link" href="https://myanimelist.net/profile/Kiter" target="_blank" rel="noreferrer">
+                <span><small>Off-screen</small>MAL</span>
+                <span class="contact-handle">/Kiter <i aria-hidden="true">↗</i></span>
+              </a>
+            </div>
+
+            <p class="availability"><i aria-hidden="true"></i>Available for select builds</p>
+          </div>
+
+          <div class="terminal" data-terminal data-reveal style="--reveal-delay: 90ms">
+            <div class="terminal-bar">
+              <span>kiter@phibao:~/portfolio</span>
+              <span class="terminal-hint">type help</span>
+            </div>
+            <div class="terminal-output" id="terminal-output" aria-live="polite">
+              <p><span class="prompt">system</span> boot complete — dossier loaded</p>
+              <p><span class="prompt">system</span> 6 wins indexed / 6 builds online</p>
+              <p><span class="prompt">system</span> try <button class="inline-command" data-command="help">help</button>, <button class="inline-command" data-command="wins">wins</button>, or <button class="inline-command" data-command="contact">contact</button>.</p>
+            </div>
+            <form class="terminal-input-row" id="terminal-form">
+              <label for="terminal-input">Command</label>
+              <span class="prompt">kiter$</span>
+              <input id="terminal-input" name="command" type="text" autocomplete="off" spellcheck="false" placeholder="help">
+              <span class="terminal-cursor" aria-hidden="true"></span>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span>Built for speed. Tuned for signal.</span>
-      <a href="https://github.com/PhiBao/phibao.github.io" target="_blank" rel="noreferrer">source</a>
+      <span class="footer-brand">Kiter / Phi Bao <span>2026</span></span>
+      <span class="footer-note">Built for speed. Tuned for signal.</span>
+      <div class="footer-links">
+        <a href="https://github.com/PhiBao/phibao.github.io" target="_blank" rel="noreferrer">Source ↗</a>
+        <a href="#main">Top ↑</a>
+      </div>
     </footer>
 
-    <script src="script.js?v=20261024-wins"></script>
+    <script src="script.js?v=20261024-dossier1"></script>
   </body>
 </html>

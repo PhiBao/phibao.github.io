@@ -1,6 +1,6 @@
 # Kiter / PhiBao Portfolio
 
-A dependency-free GitHub Pages portfolio with a cyberpunk terminal interface.
+A dependency-free GitHub Pages portfolio with a restrained cyberpunk terminal interface. Type is self-hosted (Space Grotesk + JetBrains Mono, OFL) under `fonts/`.
 
 ## Local Preview
 
